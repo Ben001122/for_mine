@@ -58,17 +58,17 @@
 
   "gifts": {
     "gift1": {
-      "image": "/assets/gift/gift1.png",
+      "image": "/assets/gift/gift.jpeg",
       "title": "🎵 Our Songs",
       "description": "The melodies of our love"
     },
     "gift2": {
-      "image": "/assets/gift/gift2.png",
+      "image": "/assets/gift/gift.jpeg",
       "title": "💌 Love Letter",
       "description": "Words from my heart"
     },
     "gift3": {
-      "image": "/assets/gift/gift3.png",
+      "image": "/assets/gift/gift.jpeg",
       "title": "📸 Our Memories",
       "description": "Captured moments together"
     }
