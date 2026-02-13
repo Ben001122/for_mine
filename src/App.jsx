@@ -185,7 +185,7 @@ function App() {
               style={{ fontFamily: "'Great Vibes', cursive" }} // <-- Classy Font Applied Here
               animate={{ scale: [1, 1.05, 1], }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}>
-              I Love You, <span style={{ fontFamily: "inherit", fontSize: "0.9em" }}>Thangame!</span>
+              I Love You, <span style={{ fontFamily: "inherit", fontSize: "0.9em" }}>Deepak!</span>
             </motion.h2>
           </motion.div>
           <div className="secret-envelope" onClick={() => setShowSecretMessage(!showSecretMessage)}>
