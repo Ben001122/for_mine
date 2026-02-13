@@ -42,9 +42,9 @@ Edit `config.json` to personalize your website. Use `config.template.json` as a 
 - `config.template.json` - Complete template with all options (reference only)
 
 ### 3. Add Your Media
-- **Photos**: Place in `src/assets/couple_photo/` and update `config.json`
-- **Songs**: Place audio files in `src/assets/` and update `config.json`
-- **Gifts**: Replace gift images in `src/assets/gift/`
+- **Photos**: Place in `assets/couple_photo/` and update `config.json`
+- **Songs**: Place audio files in `assets/` and update `config.json`
+- **Gifts**: Replace gift images in `assets/gift/`
 
 ### 4. Test Locally (Optional)
 ```bash
@@ -100,7 +100,7 @@ valentine-website/
 {
   "couplePhotos": [
     {
-      "image": "/src/assets/couple_photo/photo1.jpg",
+      "image": "/assets/couple_photo/photo1.jpg",
       "caption": "Our first date"
     }
   ]
@@ -117,8 +117,8 @@ valentine-website/
       "duration": "3:45",
       "album": "Album Name",
       "artist": "Artist",
-      "cover": "/src/assets/cover.jpg",
-      "audio": "/src/assets/song.mp3"
+      "cover": "/assets/cover.jpg",
+      "audio": "/assets/song.mp3"
     }
   ]
 }

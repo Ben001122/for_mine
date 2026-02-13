@@ -63,15 +63,15 @@ In `config.json`, update the paths to your files:
 ```json
 "couplePhotos": [
   {
-    "image": "/src/assets/couple_photo/your_photo_1.jpg",
+    "image": "/assets/couple_photo/your_photo_1.jpg",
     "caption": "Our first date"
   }
 ],
 "songs": [
   {
     "title": "Your Song",
-    "audio": "/src/assets/songs/your_song.mp3",
-    "cover": "/src/assets/album-covers/your_album_cover.jpg"
+    "audio": "/assets/songs/your_song.mp3",
+    "cover": "/assets/album-covers/your_album_cover.jpg"
   }
 ]
 ```
@@ -110,7 +110,7 @@ In `config.json`, update the paths to your files:
 ```json
 "couplePhotos": [
   {
-    "image": "/src/assets/couple_photo/photo1.jpg",
+    "image": "/assets/couple_photo/photo1.jpg",
     "caption": "Description of photo"
   }
 ]
@@ -124,8 +124,8 @@ In `config.json`, update the paths to your files:
     "duration": "3:45",
     "album": "Album Name",
     "artist": "Artist Name",
-    "cover": "/src/assets/album-covers/album_cover.jpg",
-    "audio": "/src/assets/songs/song.mp3"
+    "cover": "/assets/album-covers/album_cover.jpg",
+    "audio": "/assets/songs/song.mp3"
   }
 ]
 ```
@@ -154,7 +154,7 @@ src/assets/album-covers/
 ### File Path Rules
 - Always use forward slashes (`/`) in paths
 - Paths are relative to the project root
-- Example: `/src/assets/photo.jpg`
+- Example: `/assets/photo.jpg`
 
 ### File Naming
 - Use simple names without spaces
