@@ -33,7 +33,7 @@
     "noButtonText": "Let me think... 🤔",
     "successMessage": "💙 You Made My Heart Complete! 💙",
     "successSubtitle": "I knew your heart beats for me too, Thangame! 🥹❤️",
-    "giftsTitle": "💝 Your Valentine Gifts, Thangame 💝",
+    "giftsTitle": "💝 Your Valentine Gifts, Thangam 💝",
     "giftsSubtitle": "Click to explore your gifts 🎁",
     "songsTitle": "🎵 The Soundtrack of Our Love",
     "songsSubtitle": "Every song tells a piece of our story...",
@@ -41,7 +41,7 @@
     "photosSubtitle": "Every photo tells a story of us...",
     "letterTitle": "💌 A Letter From My Heart",
     "prosConsTitle": "Why You Should Say YES 💙",
-    "prosConsSubtitle": "Absolutely nothing bad! 🥰"
+    "prosConsSubtitle": "Absolutely nothing!!! 🥰"
   },
 
   "navigation": {
@@ -61,17 +61,17 @@
 
   "gifts": {
     "gift1": {
-      "image": "/assets/gift/gift1.png",
+      "image": "/assets/gift/gift1.jpg",
       "title": "🎵 Our Songs",
       "description": "The melodies of our love"
     },
     "gift2": {
-      "image": "/assets/gift/gift2.png",
+      "image": "/assets/gift/gift2.jpg",
       "title": "💌 Love Letter",
       "description": "Words from my heart"
     },
     "gift3": {
-      "image": "/assets/gift/gift3.png",
+      "image": "/assets/gift/gift3.jpg",
       "title": "📸 Our Memories",
       "description": "Captured moments together"
     }
@@ -88,7 +88,7 @@
       "emotion": "Butterflies & First Feelings",
       "duration": "5:10",
       "album": "Where It All Began",
-      "artist": "My Thangame",
+      "artist": "My Thangam",
       "cover": "/assets/album-covers/anal_mele.jpeg",
       "audio": "/assets/songs/Anal-Mele-Panithuli.mp3"
     },
@@ -102,7 +102,7 @@
       "emotion": "Healing & Comfort",
       "duration": "04:20",
       "album": "My Healer",
-      "artist": "My Thangame",
+      "artist": "My Thangam",
       "cover": "/assets/album-covers/kanne_kalaimaane.jpeg",
       "audio": "/assets/songs/Kanne-Kalaimaane.mp3"
     },
@@ -116,7 +116,7 @@
       "emotion": "Feeling Special & Loved",
       "duration": "4:38",
       "album": "You In Every Word",
-      "artist": "My Thangame",
+      "artist": "My Thangam",
       "cover": "/assets/album-covers/yelae_yelae.jpeg",
       "audio": "/assets/songs/Yaeley-Yaeley-Maruthu.mp3"
     },
@@ -130,7 +130,7 @@
       "emotion": "Timeless Romance",
       "duration": "5:52",
       "album": "Timeless Love",
-      "artist": "My Thangame",
+      "artist": "My Thangam",
       "cover": "/assets/album-covers/Poove-Sempoove.jpg",
       "audio": "/assets/songs/Poove-Sempoove.mp3"
     },
@@ -144,7 +144,7 @@
       "emotion": "Unity & Harmony",
       "duration": "5:01",
       "album": "Our Harmony",
-      "artist": "Thangame & Me",
+      "artist": "Thangam & Me",
       "cover": "/assets/album-covers/Aandipatti.jpeg",
       "audio": "/assets/songs/Aandipatti-Mariappan-Pondatti.mp3"
     },
@@ -158,7 +158,7 @@
       "emotion": "Continuous Love",
       "duration": "4:34",
       "album": "Fresh Love",
-      "artist": "My Thangame",
+      "artist": "My Thangam",
       "cover": "/assets/album-covers/neelothi.jpg",
       "audio": "/assets/songs/Neelothi.mp3"
     }
@@ -261,7 +261,7 @@
       "As I write this letter, my heart is overflowing with emotions I never knew I could feel. You've changed my world in the most beautiful way, and I want you to know just how much you mean to me.",
       "Remember our first call? The one where we talked for hours and it felt like minutes? Your mindset, your thoughts, your way of seeing the world... everything about you impressed me. I knew from that moment that you were different. You were special. You were the answer to prayers I didn't even know I was praying.",
       "What amazes me most is how you NOTICE me. In a world where people often overlook the little things, you see every effort I make. You appreciate every small gesture. You make me feel valued, cherished, and loved. Do you know how rare that is? Do you know how much that means to me?",
-      "And then there's your family – the beautiful, wholesome package you came with. Akka, Rajesh anna, Thithu... They welcomed me with such warmth and affection. They made me feel like I belonged. Through them, I see why you are the way you are. You come from love, and you give love so effortlessly.",
+      "And then there's your family – the beautiful, wholesome package you came with. Amma, Appa, Akka, Rajesh anna, Thithu... They welcomed me with such warmth and affection. They made me feel like I belonged. Through them, I see why you are the way you are. You come from love, and you give love so effortlessly.",
       "You know what I see when I look at you, Thangame? I see my baby. Yes, behind that strong, responsible man is a soft, beautiful soul that I want to treasure forever. Your innocent smile, your vulnerable moments, your cute tantrums, your need for comfort – I cherish all of it. I want to protect you, care for you, and love you in ways you've never been loved before.",
       "I'm feeling so many emotions right now, and I want to hold onto these feelings forever. I want to cherish every moment we have together. I want to spend our lifespan building something beautiful – a God-centered, loving family that reflects His grace in everything we do.",
       "With God at the center of our relationship, I know we can overcome anything. I dream of a home filled with faith, love, laughter, and little blessings. I dream of growing old with you, serving God together, and creating a legacy of love.",
@@ -327,12 +327,12 @@
   },
 
   "media": {
-    "mainBearGif": "/assets/cute-bear.gif",
+    "mainBearGif": "/assets/rose-bear.gif",
     "loveBearGif": "/assets/love-you-bear.gif",
     "loveYouBearGif": "/assets/love-you-bear.gif",
     "musicBearGif": "/assets/music-bear.gif",
     "comfortBearGif": "/assets/comfort-bear.gif",
-    "childGif": "/assets/cute-bear.gif",
+    "childGif": "/assets/child.gif",
     "envelopeSeal": "💙"
   },
 
