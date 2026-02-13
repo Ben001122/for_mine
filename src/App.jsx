@@ -244,7 +244,7 @@ function App() {
                   lineHeight: '1.6' 
                 }}
               >
-                Yayyyy!! You opened all the gifts, Thangame! 💕<br />I LOVE YOU SO MUCH! 🥰
+                Yayyyy!! You opened all the gifts, Thangame! 💕<br /><span style={{ fontSize: '1.2em' }}>I Love You Sooooo Muchhhhhh! 🥰</span>
               </p>
             </motion.div>
           ) : (
