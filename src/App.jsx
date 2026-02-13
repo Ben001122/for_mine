@@ -60,7 +60,7 @@ function App() {
       setShowHoverPopup(true);
       setHoveredOnce(true);
     } else {
-      setNoLabel("YESSS 💙");
+      setNoLabel("YESSS ❣️");
     }
   }, [hoveredOnce]);
 
@@ -676,7 +676,7 @@ function App() {
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
-              {config.content?.yesButtonText || "YES! 💙"}
+              {config.content?.yesButtonText || "YES! ❣️"}
             </motion.button>
 
             <motion.button
@@ -746,7 +746,7 @@ function App() {
               >
                 <button className="close-btn" onClick={closeProsConsPopup}>✕</button>
 
-                <h2 className="pros-cons-title">{config.content?.prosConsTitle || "Why You Should Say YES 💙"}</h2>
+                <h2 className="pros-cons-title">{config.content?.prosConsTitle || "Why You Should Say YES ❤️‍🩹"}</h2>
 
                 <div className="cards-container">
                   <motion.div className="card pros-card" whileHover={{ y: -5 }}>
