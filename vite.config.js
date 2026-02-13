@@ -3,7 +3,6 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/for_mine/',
   build: {
     outDir: 'dist',
     minify: 'esbuild'
