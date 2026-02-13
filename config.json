@@ -7,32 +7,32 @@
     "hisNicknameForYou": "Ben"
   },
   
-  "theme": {
-    "primaryColor": "#4A6FA5",
-    "secondaryColor": "#8B7355",
-    "accentColor": "#D4A574",
-    "gradientStart": "#1a365d",
-    "gradientMiddle": "#4A6FA5",
-    "gradientEnd": "#8B7355",
-    "backgroundGradient": "linear-gradient(135deg, #1a365d 0%, #2d4a6f 25%, #4a6fa5 50%, #8b7355 75%, #a0826d 100%)",
-    "cardBackground": "rgba(255, 255, 255, 0.95)",
-    "textPrimary": "#2C3E50",
-    "textSecondary": "#5D6D7E",
-    "heartColor": "#E74C3C",
+    "theme": {
+    "primaryColor": "#FF6B9A",
+    "secondaryColor": "#FF9A8B",
+    "accentColor": "#D6B6F3",
+    "gradientStart": "#D6B6F3",
+    "gradientMiddle": "#FF6B9A",
+    "gradientEnd": "#FF9A8B",
+    "backgroundGradient": "linear-gradient(135deg, #d6b6f3 0%, #ffcad4 25%, #ff6b9a 50%, #ff9a8b 75%, #ffb4a2 100%)",
+    "cardBackground": "rgba(255, 250, 245, 0.95)",
+    "textPrimary": "#6D435A",
+    "textSecondary": "#8C7784",
+    "heartColor": "#F9426B",
     "fontFamily": "'Playfair Display', 'Georgia', serif",
     "fontFamilyBody": "'Lato', 'Segoe UI', sans-serif",
     "fontFamilyScript": "'Dancing Script', cursive"
   },
 
-  "content": {
-    "pageTitle": "💙 En Thanga Katti - Our Love Story 💙",
+    "content": {
+    "pageTitle": "💖 En Thanga Katti - Our Love Story 💖",
     "mainTitle": "Will you be my Valentine forever, Thangame?",
     "title": "Will you be my Valentine forever?",
-    "subtitle": "This is more than a question... it's a promise of forever 💙",
-    "yesButtonText": "YES! Forever & Always 💙",
+    "subtitle": "This is more than a question... it's a promise of forever 💕",
+    "yesButtonText": "YES! Forever & Always 💖",
     "noButtonText": "Let me think... 🤔",
-    "successMessage": "💙 You Made My Heart Complete! 💙",
-    "successSubtitle": "I knew your heart beats for me too, Thangame! 🥹❤️",
+    "successMessage": "💖 You Made My Heart Complete! 💖",
+    "successSubtitle": "I knew your heart beats for me too, Thangame! 🥹🥰",
     "giftsTitle": "💝 Your Valentine Gifts, Thangam 💝",
     "giftsSubtitle": "Click to explore your gifts 🎁",
     "songsTitle": "🎵 The Soundtrack of Our Love",
@@ -40,12 +40,12 @@
     "photosTitle": "📸 Our Precious Memories",
     "photosSubtitle": "Every photo tells a story of us...",
     "letterTitle": "💌 A Letter From My Heart",
-    "prosConsTitle": "Why You Should Say YES 💙",
+    "prosConsTitle": "Why You Should Say YES! 💖",
     "prosConsSubtitle": "Absolutely nothing!!! 🥰"
   },
 
-  "navigation": {
-    "backToLove": "💙 Back to Love",
+    "navigation": {
+    "backToLove": "💖 Back to Love",
     "backToGifts": "🎁 Back to Gifts",
     "backToPhotos": "📸 Back to Photos",
     "backToSongs": "🎵 Back to Songs",
@@ -61,17 +61,17 @@
 
   "gifts": {
     "gift1": {
-      "image": "/assets/gift/gift1.jpg",
+      "image": "/assets/gift/gift1.png",
       "title": "🎵 Our Songs",
       "description": "The melodies of our love"
     },
     "gift2": {
-      "image": "/assets/gift/gift2.jpg",
+      "image": "/assets/gift/gift2.png",
       "title": "💌 Love Letter",
       "description": "Words from my heart"
     },
     "gift3": {
-      "image": "/assets/gift/gift3.jpg",
+      "image": "/assets/gift/gift3.png",
       "title": "📸 Our Memories",
       "description": "Captured moments together"
     }
@@ -84,7 +84,7 @@
       "title": "Anal Mele Panithuli",
       "icon": "🎤",
       "story": "I still remember the butterflies in my stomach when you first sang for me. Your voice touched my soul in ways I can't explain. This song will forever be special because it was the FIRST.",
-      "memory": "The beginning of your serenades... 💙",
+      "memory": "The beginning of your serenades... 💕",
       "emotion": "Butterflies & First Feelings",
       "duration": "5:10",
       "album": "Where It All Began",
@@ -184,7 +184,7 @@
     {
       "id": 3,
       "image": "/assets/couple_photo/us.jpg",
-      "caption": "Just us being perfectly us 💙",
+      "caption": "Just us being perfectly us 💕",
       "memory": "Our Natural Chemistry",
       "emotion": "Comfortable Love",
       "date": "Together"
@@ -251,12 +251,20 @@
       "caption": "When you inspire me to be better ⚡💪",
       "memory": "My Motivator",
       "emotion": "Inspired & Empowered",
-      "date": "Growth Together"
+      "date": "Growth Together" 
+    },
+    {
+      "id": 12,
+      "image": "/assets/couple_photo/us_shopping.png",
+      "caption": "A glimpse into our future as a family 💕",
+      "memory": "My Man",
+      "emotion": "Loved & Cherished",
+      "date": "Shopping" 
     }
   ],
 
   "letter": {
-    "title": "My Dearest Thangame,",
+    "title": "My Dearest Deepak,",
     "content": [
       "As I write this letter, my heart is overflowing with emotions I never knew I could feel. You've changed my world in the most beautiful way, and I want you to know just how much you mean to me.",
       "Remember our first call? The one where we talked for hours and it felt like minutes? Your mindset, your thoughts, your way of seeing the world... everything about you impressed me. I knew from that moment that you were different. You were special. You were the answer to prayers I didn't even know I was praying.",
@@ -272,19 +280,19 @@
     "signature": "Forever Yours,\nBen ❤️"
   },
 
-  "secretMessage": {
-    "title": "💙 My Secret Message to You 💙",
+    "secretMessage": {
+    "title": "💖 My Secret Message to You 💖",
     "content": [
       "Thangame, there are things I feel that I can barely put into words...",
       "The way my heart races when I hear your voice... 💓",
       "The way I smile like crazy just thinking about you... 😊",
       "The way I thank God every day for bringing you into my life... 🙏",
       "The way I dream about our future every single night... ✨",
-      "The way I fall more in love with you with each passing day... 💙",
+      "The way I fall more in love with you with each passing day... 💕",
       "You are my answered prayer, my beautiful blessing, my forever person.",
       "I'm missing you so much right now... but knowing you're mine makes everything better. 🥹",
       "Sending you infinite hugs, endless kisses, and all my love across the miles... 💋💋💋",
-      "Until I'm in your arms again, know that you own my heart completely. 💙"
+      "Until I'm in your arms again, know that you own my heart completely. 💖"
     ]
   },
 
@@ -302,7 +310,7 @@
     {
       "gif": "/assets/cute-bear.gif",
       "text": "I'll care and listen to you always 👂",
-      "icon": "💙"
+      "icon": "💕"
     },
     {
       "gif": "/assets/kiss-bears.gif",
@@ -321,9 +329,9 @@
     }
   ],
 
-  "animations": {
-    "fallingItems": ["💙", "🤎", "🎵", "❤️", "✨", "💕", "🌟", "💫", "🙏"],
-    "celebrationItems": ["💙", "🤎", "✨", "🎵", "💕", "🎉", "🌹", "💫", "⭐", "❤️"]
+    "animations": {
+    "fallingItems": ["💖", "🧡", "✨", "🌸", "💕", "🥰", "💌"],
+    "celebrationItems": ["💖", "🧡", "✨", "🎉", "🌸", "💕", "🥳", "🥰", "🎊", "💌"]
   },
 
   "media": {
@@ -333,7 +341,7 @@
     "musicBearGif": "/assets/music-bear.gif",
     "comfortBearGif": "/assets/comfort-bear.gif",
     "childGif": "/assets/child.gif",
-    "envelopeSeal": "💙"
+    "envelopeSeal": "💖"
   },
 
   "footer": {

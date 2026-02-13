@@ -4,76 +4,70 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap');
 
-/* CSS Variables - Blue to Brown Theme */
+/* CSS Variables - Candy Sorbet Theme */
 :root {
-  /* Primary Blue Shades */
-  --blue-darkest: #1a365d;
-  --blue-dark: #2c3e50;
-  --blue-medium: #4a6fa5;
-  --blue-light: #6b8cae;
-  --blue-lightest: #a8c5db;
-  
-  /* Brown/Warm Shades */
-  --brown-dark: #5d4e37;
-  --brown-medium: #8b7355;
-  --brown-light: #a0826d;
-  --brown-accent: #d4a574;
-  --brown-warm: #c9a86c;
+  /* Cute & Vibrant Palette */
+  --pink-vibrant: #FF6B9A;
+  --pink-soft: #FFCAD4;
+  --peach-warm: #FF9A8B;
+  --orange-sunny: #FFB4A2;
+  --lavender-dreamy: #D6B6F3;
+  --plum-deep: #6D435A;
+  --plum-soft: #8C7784;
   
   /* Theme Colors */
-  --primary-color: #4a6fa5;
-  --secondary-color: #8b7355;
-  --accent-color: #d4a574;
-  --gradient-start: #1a365d;
-  --gradient-middle: #4a6fa5;
-  --gradient-end: #8b7355;
+  --primary-color: var(--pink-vibrant);
+  --secondary-color: var(--peach-warm);
+  --accent-color: var(--lavender-dreamy);
+  --gradient-start: var(--lavender-dreamy);
+  --gradient-middle: var(--pink-vibrant);
+  --gradient-end: var(--peach-warm);
   
   /* Background */
   --background-gradient: linear-gradient(135deg, 
-    #1a365d 0%, 
-    #2d4a6f 20%, 
-    #4a6fa5 40%, 
-    #6b8cae 60%,
-    #8b7355 80%, 
-    #a0826d 100%
+    #d6b6f3 0%, 
+    #ffcad4 25%, 
+    #ff6b9a 50%, 
+    #ff9a8b 75%, 
+    #ffb4a2 100%
   );
   
-  --card-background: rgba(255, 255, 255, 0.95);
-  --card-background-glass: rgba(255, 255, 255, 0.85);
+  --card-background: rgba(255, 250, 245, 0.95);
+  --card-background-glass: rgba(255, 250, 245, 0.85);
   
   /* Text Colors */
-  --text-primary: #2c3e50;
-  --text-secondary: #5d6d7e;
-  --text-light: #8899a6;
+  --text-primary: var(--plum-deep);
+  --text-secondary: var(--plum-soft);
+  --text-light: #B4A6AE;
   --text-white: #ffffff;
   
   /* Special Colors */
-  --heart-color: #e74c3c;
-  --love-pink: #ff6b9d;
+  --heart-color: #F9426B;
+  --love-pink: #FF69B4; /* Classic hot pink for love text */
   --success-green: #27ae60;
   --warning-gold: #f39c12;
   
-  /* Fonts */
+  /* Fonts (Kept the same - they are great!) */
   --font-family-heading: 'Playfair Display', Georgia, serif;
   --font-family-body: 'Lato', 'Segoe UI', sans-serif;
   --font-family-script: 'Dancing Script', cursive;
   
-  /* Shadows */
-  --shadow-sm: 0 2px 8px rgba(26, 54, 93, 0.1);
-  --shadow-md: 0 4px 20px rgba(26, 54, 93, 0.15);
-  --shadow-lg: 0 8px 40px rgba(26, 54, 93, 0.2);
-  --shadow-xl: 0 20px 60px rgba(26, 54, 93, 0.25);
-  --shadow-glow-blue: 0 0 30px rgba(74, 111, 165, 0.4);
-  --shadow-glow-brown: 0 0 30px rgba(139, 115, 85, 0.4);
+  /* Shadows (Slightly softened for the cute theme) */
+  --shadow-sm: 0 2px 8px rgba(109, 67, 90, 0.08);
+  --shadow-md: 0 4px 20px rgba(109, 67, 90, 0.12);
+  --shadow-lg: 0 8px 40px rgba(109, 67, 90, 0.15);
+  --shadow-xl: 0 20px 60px rgba(109, 67, 90, 0.20);
+  --shadow-glow-blue: 0 0 30px rgba(255, 107, 154, 0.4); /* Changed to pink glow */
+  --shadow-glow-brown: 0 0 30px rgba(255, 154, 139, 0.4); /* Changed to peach glow */
   
-  /* Borders */
+  /* Borders (Kept the same) */
   --border-radius-sm: 8px;
   --border-radius-md: 16px;
   --border-radius-lg: 24px;
   --border-radius-xl: 32px;
   --border-radius-full: 50%;
   
-  /* Transitions */
+  /* Transitions (Kept the same) */
   --transition-fast: 0.2s ease;
   --transition-medium: 0.3s ease;
   --transition-slow: 0.5s ease;
