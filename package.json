@@ -2,13 +2,13 @@
   "name": "thangame-valentine",
   "private": true,
   "version": "1.0.0",
-  "type": "module",
+  "homepage": "https://ben001122.github.io/for_mine/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "optimize-images": "node scripts/optimize-images.js"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "framer-motion": "^10.16.4",
