@@ -385,7 +385,7 @@ function App() {
                       alt="Album Cover" 
                       loading="lazy" 
                       className="album-image"
-                      onError={(e) => { e.target.src = '/src/assets/album-covers/default.jpg'; }}
+                      onError={(e) => { e.target.src = '/assets/album-covers/default.jpg'; }}
                     />
                   </div>
                 </motion.div>
@@ -543,7 +543,7 @@ function App() {
                     src={photo.image} 
                     alt={photo.memory || `Memory ${index + 1}`} 
                     loading="lazy"
-                    onError={(e) => { e.target.src = '/src/assets/couple_photo/placeholder.jpg'; }}
+                    onError={(e) => { e.target.src = '/assets/couple_photo/placeholder.jpg'; }}
                   />
                 </div>
                 <p className="photo-caption">{photo.caption}</p>

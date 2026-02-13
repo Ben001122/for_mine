@@ -167,7 +167,7 @@
   "couplePhotos": [
     {
       "id": 1,
-      "image": "public/assets/couple_photo/pic_that_imprseed_me.jpg",
+      "image": "/assets/couple_photo/pic_that_imprseed_me.jpg",
       "caption": "The picture that made my heart skip a beat 😍",
       "memory": "When I First Saw This",
       "emotion": "Instant Attraction",
@@ -175,7 +175,7 @@
     },
     {
       "id": 2,
-      "image": "dist/assets/couple_photo/engagement.jpg",
+      "image": "/assets/couple_photo/engagement.jpg",
       "caption": "The day we promised forever 💍✨",
       "memory": "Our Sacred Promise",
       "emotion": "Divine Commitment",
@@ -247,7 +247,7 @@
     },
     {
       "id": 11,
-      "image": "public/assets/couple_photo/ur_sudden_motivation_todo_something.png",
+      "image": "/assets/couple_photo/ur_sudden_motivation_todo_something.png",
       "caption": "When you inspire me to be better ⚡💪",
       "memory": "My Motivator",
       "emotion": "Inspired & Empowered",
