@@ -61,17 +61,17 @@
 
   "gifts": {
     "gift1": {
-      "image": "/src/assets/gift/gift1.png",
+      "image": "/assets/gift/gift1.png",
       "title": "🎵 Our Songs",
       "description": "The melodies of our love"
     },
     "gift2": {
-      "image": "/src/assets/gift/gift2.png",
+      "image": "/assets/gift/gift2.png",
       "title": "💌 Love Letter",
       "description": "Words from my heart"
     },
     "gift3": {
-      "image": "/src/assets/gift/gift3.png",
+      "image": "/assets/gift/gift3.png",
       "title": "📸 Our Memories",
       "description": "Captured moments together"
     }
@@ -89,8 +89,8 @@
       "duration": "5:10",
       "album": "Where It All Began",
       "artist": "My Thangame",
-      "cover": "/src/assets/album-covers/anal_mele.jpeg",
-      "audio": "/src/assets/songs/Anal-Mele-Panithuli.mp3"
+      "cover": "/assets/album-covers/anal_mele.jpeg",
+      "audio": "/assets/songs/Anal-Mele-Panithuli.mp3"
     },
     {
       "id": 2,
@@ -103,8 +103,8 @@
       "duration": "04:20",
       "album": "My Healer",
       "artist": "My Thangame",
-      "cover": "/src/assets/album-covers/kanne_kalaimaane.jpeg",
-      "audio": "/src/assets/songs/Kanne-Kalaimaane.mp3"
+      "cover": "/assets/album-covers/kanne_kalaimaane.jpeg",
+      "audio": "/assets/songs/Kanne-Kalaimaane.mp3"
     },
     {
       "id": 3,
@@ -117,8 +117,8 @@
       "duration": "4:38",
       "album": "You In Every Word",
       "artist": "My Thangame",
-      "cover": "/src/assets/album-covers/yelae_yelae.jpeg",
-      "audio": "/src/assets/songs/Yaeley-Yaeley-Maruthu.mp3"
+      "cover": "/assets/album-covers/yelae_yelae.jpeg",
+      "audio": "/assets/songs/Yaeley-Yaeley-Maruthu.mp3"
     },
     {
       "id": 4,
@@ -131,8 +131,8 @@
       "duration": "5:52",
       "album": "Timeless Love",
       "artist": "My Thangame",
-      "cover": "/src/assets/album-covers/Poove-Sempoove.jpg",
-      "audio": "/src/assets/songs/Poove-Sempoove.mp3"
+      "cover": "/assets/album-covers/Poove-Sempoove.jpg",
+      "audio": "/assets/songs/Poove-Sempoove.mp3"
     },
     {
       "id": 5,
@@ -145,8 +145,8 @@
       "duration": "5:01",
       "album": "Our Harmony",
       "artist": "Thangame & Me",
-      "cover": "/src/assets/album-covers/Aandipatti.jpeg",
-      "audio": "/src/assets/songs/Aandipatti-Mariappan-Pondatti.mp3"
+      "cover": "/assets/album-covers/Aandipatti.jpeg",
+      "audio": "/assets/songs/Aandipatti-Mariappan-Pondatti.mp3"
     },
     {
       "id": 6,
@@ -159,15 +159,15 @@
       "duration": "4:34",
       "album": "Fresh Love",
       "artist": "My Thangame",
-      "cover": "/src/assets/album-covers/neelothi.jpg",
-      "audio": "/src/assets/songs/Neelothi.mp3"
+      "cover": "/assets/album-covers/neelothi.jpg",
+      "audio": "/assets/songs/Neelothi.mp3"
     }
   ],
 
   "couplePhotos": [
     {
       "id": 1,
-      "image": "/src/assets/couple_photo/pic_that_imprseed_me.jpg",
+      "image": "/assets/couple_photo/pic_that_imprseed_me.jpg",
       "caption": "The picture that made my heart skip a beat 😍",
       "memory": "When I First Saw This",
       "emotion": "Instant Attraction",
@@ -175,7 +175,7 @@
     },
     {
       "id": 2,
-      "image": "/src/assets/couple_photo/engagement.jpg",
+      "image": "/assets/couple_photo/engagement.jpg",
       "caption": "The day we promised forever 💍✨",
       "memory": "Our Sacred Promise",
       "emotion": "Divine Commitment",
@@ -183,7 +183,7 @@
     },
     {
       "id": 3,
-      "image": "/src/assets/couple_photo/us.jpg",
+      "image": "/assets/couple_photo/us.jpg",
       "caption": "Just us being perfectly us 💙",
       "memory": "Our Natural Chemistry",
       "emotion": "Comfortable Love",
@@ -191,7 +191,7 @@
     },
     {
       "id": 4,
-      "image": "/src/assets/couple_photo/our_prayer_together.png",
+      "image": "/assets/couple_photo/our_prayer_together.png",
       "caption": "When we prayed together - God at our center 🙏💙",
       "memory": "Seeking God Together",
       "emotion": "Spiritual Unity",
@@ -199,7 +199,7 @@
     },
     {
       "id": 5,
-      "image": "/src/assets/couple_photo/ur_concert.png",
+      "image": "/assets/couple_photo/ur_concert.png",
       "caption": "Your voice, your passion, my admiration 🎤🎵",
       "memory": "Watching You Shine",
       "emotion": "Pride & Admiration",
@@ -207,7 +207,7 @@
     },
     {
       "id": 6,
-      "image": "/src/assets/couple_photo/first_time_cooking.jpg",
+      "image": "/assets/couple_photo/first_time_cooking.jpg",
       "caption": "The chef I'm blessed to have 👨‍🍳💕",
       "memory": "Tasting Your Love",
       "emotion": "Feeling Cared For",
@@ -215,7 +215,7 @@
     },
     {
       "id": 7,
-      "image": "/src/assets/couple_photo/watching_u_clean.png",
+      "image": "/assets/couple_photo/watching_u_clean.png",
       "caption": "Even in simple moments, you're beautiful 🧹✨",
       "memory": "Everyday Love",
       "emotion": "Finding Beauty in Ordinary",
@@ -223,7 +223,7 @@
     },
     {
       "id": 8,
-      "image": "/src/assets/couple_photo/watching_u_sleep.png",
+      "image": "/assets/couple_photo/watching_u_sleep.png",
       "caption": "Peaceful, vulnerable, mine 😴💙",
       "memory": "Guardian of Your Peace",
       "emotion": "Protective Love",
@@ -231,7 +231,7 @@
     },
     {
       "id": 9,
-      "image": "/src/assets/couple_photo/when_i_was_feeling_low.png",
+      "image": "/assets/couple_photo/when_i_was_feeling_low.png",
       "caption": "You lifted me when I was down 🤗💫",
       "memory": "My Comforter",
       "emotion": "Healing & Gratitude",
@@ -239,7 +239,7 @@
     },
     {
       "id": 10,
-      "image": "/src/assets/couple_photo/ur_explanation_of_us.jpg",
+      "image": "/assets/couple_photo/ur_explanation_of_us.jpg",
       "caption": "The way you see 'us' makes my heart full 💬❤️",
       "memory": "Understanding Our Love",
       "emotion": "Emotional Connection",
@@ -247,7 +247,7 @@
     },
     {
       "id": 11,
-      "image": "/src/assets/couple_photo/ur_sudden_motivation_todo_something.png",
+      "image": "/assets/couple_photo/ur_sudden_motivation_todo_something.png",
       "caption": "When you inspire me to be better ⚡💪",
       "memory": "My Motivator",
       "emotion": "Inspired & Empowered",
@@ -290,32 +290,32 @@
 
   "prosCons": [
     {
-      "gif": "/src/assets/cook-bear.gif",
+      "gif": "/assets/cook-bear.gif",
       "text": "I'll cook(try🥹) varieties of food for you 🍳",
       "icon": "👨‍🍳"
     },
     {
-      "gif": "/src/assets/comfort-bear.gif",
+      "gif": "/assets/comfort-bear.gif",
       "text": "I can give you so much love and comfort 💕",
       "icon": "🤗"
     },
     {
-      "gif": "/src/assets/cute-bear.gif",
+      "gif": "/assets/cute-bear.gif",
       "text": "I'll care and listen to you always 👂",
       "icon": "💙"
     },
     {
-      "gif": "/src/assets/kiss-bears.gif",
+      "gif": "/assets/kiss-bears.gif",
       "text": "Unlimited hugs & kisses (non-negotiable 😏)",
       "icon": "💋"
     },
     {
-      "gif": "/src/assets/music-bear.gif",
+      "gif": "/assets/music-bear.gif",
       "text": "Live singing performances just for you 🎶",
       "icon": "🎤"
     },
     {
-      "gif": "/src/assets/love-you-bear.gif",
+      "gif": "/assets/love-you-bear.gif",
       "text": "A lifetime of love and loyalty 💙",
       "icon": "💍"
     }
@@ -327,12 +327,12 @@
   },
 
   "media": {
-    "mainBearGif": "/src/assets/cute-bear.gif",
-    "loveBearGif": "/src/assets/love-you-bear.gif",
-    "loveYouBearGif": "/src/assets/love-you-bear.gif",
-    "musicBearGif": "/src/assets/music-bear.gif",
-    "comfortBearGif": "/src/assets/comfort-bear.gif",
-    "childGif": "/src/assets/cute-bear.gif",
+    "mainBearGif": "/assets/cute-bear.gif",
+    "loveBearGif": "/assets/love-you-bear.gif",
+    "loveYouBearGif": "/assets/love-you-bear.gif",
+    "musicBearGif": "/assets/music-bear.gif",
+    "comfortBearGif": "/assets/comfort-bear.gif",
+    "childGif": "/assets/cute-bear.gif",
     "envelopeSeal": "💙"
   },
 
