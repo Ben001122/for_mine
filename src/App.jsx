@@ -185,7 +185,7 @@ function App() {
               style={{ fontFamily: "''Playfair Display', cursive" }} // <-- Classy Font Applied Here
               animate={{ scale: [1, 1.05, 1], }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}>
-              Happy First Valentine's Day, <span style={{ fontFamily: "'Playfair Display'", fontSize: "0.9em" }}>Deepak!</span>
+              Happy First Valentine's Day, <span style={{ fontFamily: "'Playfair Display', cursive", fontSize: "0.9em" }}>Deepak!</span>
             </motion.h2>
           </motion.div>
           <div className="secret-envelope" onClick={() => setShowSecretMessage(!showSecretMessage)}>
