@@ -232,18 +232,13 @@ function App() {
               </motion.div>
             ))}
           </div>
-          // REPLACE THE CODE ABOVE WITH THIS:
 
         {allGiftsOpened ? (
           <motion.div className="all-gifts-opened" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }}>
             <div className="love-you-bear-container"><img src={config.media?.loveYouBearGif || config.media?.loveYouBearGif} alt="love you bear" loading="lazy" /></div>
             <p 
               className="all-gifts-text" 
-              style={{ 
-                fontFamily: "'Great Vibes', cursive", 
-                fontSize: '1.7em', 
-                lineHeight: '1.5' 
-              }}
+              style={{ fontFamily: "'Great Vibes', cursive" }}
             >
               Yayyyy!! You opened all the gifts, Thangame! 💕<br />I LOVE YOU SO MUCH! 🥰
             </p>
