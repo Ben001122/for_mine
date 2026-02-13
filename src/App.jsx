@@ -278,7 +278,7 @@ function App() {
             <motion.button className="btn yes" onClick={() => { setView("success"); createCelebration(); }} whileHover={{ scale: 1.1, y: -5 }} whileTap={{ scale: 0.95 }} transition={{ type: "spring", stiffness: 300, damping: 20 }}>
               {config.content?.yesButtonText || "YES! 💖"}
             </motion.button>
-            <motion.button className="btn no" onMouseEnter={handleNoEnter} onMouseLeave={handleNoLeave} onClick={() => { setView("success"); createCelebration(); }} whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }} transition={{ type: "spring", stiffness: 300, damping: 20 }}>
+            <motion.button className="btn no" onMouseEnter={handleNoEnter} onMouseLeave={handleNoLeave} onClick={handleNoEnter}  whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }} transition={{ type: "spring", stiffness: 300, damping: 20 }}>
               {noLabel}
             </motion.button>
           </motion.div>
