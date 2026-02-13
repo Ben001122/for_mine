@@ -30,7 +30,7 @@ function App() {
 
       const item = document.createElement('div');
       item.className = 'falling-item';
-      const items = config.animations.fallingItems;
+      const items = config.animations?.fallingItems || ["💙", "❤️", "✨"];
       item.textContent = items[Math.floor(Math.random() * items.length)];
       item.style.left = Math.random() * 100 + '%';
       item.style.animationDuration = (Math.random() * 3 + 2) + 's';
@@ -44,8 +44,16 @@ function App() {
     return () => clearInterval(interval);
   }, []);
 
-  const songs = useMemo(() => config.songs, []);
-  const slides = useMemo(() => config.prosCons, []);
+  // Get songs array (handle both structures)
+  const songs = useMemo(() => {
+    return Array.isArray(config.songs) ? config.songs : (config.songs?.playlist || []);
+  }, []);
+
+  // Get prosCons array
+  const slides = useMemo(() => config.prosCons || [], []);
+
+  // Get current song
+  const currentSong = useMemo(() => songs[currentSongIndex] || {}, [songs, currentSongIndex]);
 
   const handleNoEnter = useCallback(() => {
     if (!hoveredOnce) {
@@ -77,11 +85,15 @@ function App() {
   }, []);
 
   const nextSlide = useCallback(() => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
+    if (slides.length > 0) {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }
   }, [slides.length]);
 
   const prevSlide = useCallback(() => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+    if (slides.length > 0) {
+      setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+    }
   }, [slides.length]);
 
   // Gift functions
@@ -107,9 +119,8 @@ function App() {
   }, [handleGiftClick]);
 
   // Media player functions
-  const currentSong = useMemo(() => songs[currentSongIndex], [songs, currentSongIndex]);
-
   const formatTime = useCallback((time) => {
+    if (isNaN(time)) return "0:00";
     const minutes = Math.floor(time / 60);
     const seconds = Math.floor(time % 60);
     return `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
@@ -120,27 +131,31 @@ function App() {
       if (isPlaying) {
         audioRef.current.pause();
       } else {
-        audioRef.current.play();
+        audioRef.current.play().catch(console.error);
       }
       setIsPlaying(!isPlaying);
     }
   }, [isPlaying]);
 
   const handleNext = useCallback(() => {
-    setCurrentSongIndex((prev) => (prev + 1) % songs.length);
-    setIsPlaying(false);
+    if (songs.length > 0) {
+      setCurrentSongIndex((prev) => (prev + 1) % songs.length);
+      setIsPlaying(false);
+    }
   }, [songs.length]);
 
   const handlePrevious = useCallback(() => {
-    setCurrentSongIndex((prev) => (prev - 1 + songs.length) % songs.length);
-    setIsPlaying(false);
+    if (songs.length > 0) {
+      setCurrentSongIndex((prev) => (prev - 1 + songs.length) % songs.length);
+      setIsPlaying(false);
+    }
   }, [songs.length]);
 
   const handleSongSelect = useCallback((index) => {
     setCurrentSongIndex(index);
     setTimeout(() => {
       if (audioRef.current) {
-        audioRef.current.play();
+        audioRef.current.play().catch(console.error);
         setIsPlaying(true);
       }
     }, 100);
@@ -184,7 +199,7 @@ function App() {
     const container = document.querySelector('.falling-items');
     if (!container) return;
 
-    const items = config.animations.celebrationItems;
+    const items = config.animations?.celebrationItems || ["💙", "❤️", "✨", "🎉"];
     for (let i = 0; i < 50; i++) {
       setTimeout(() => {
         const item = document.createElement('div');
@@ -199,6 +214,11 @@ function App() {
     }
   }, []);
 
+  // Get couple photos
+  const couplePhotos = useMemo(() => {
+    return config.couplePhotos || config.photos?.gallery || [];
+  }, []);
+
   // SUCCESS VIEW
   if (view === "success") {
     return (
@@ -209,7 +229,7 @@ function App() {
           <p className="subtitle small">{config.content.successSubtitle}</p>
 
           <div className="image-card">
-            <img src={config.media.loveYouBearGif} alt="love you" loading="lazy" />
+            <img src={config.media?.loveYouBearGif || config.media?.loveBearGif} alt="love you" loading="lazy" />
           </div>
 
           <motion.div
@@ -244,22 +264,25 @@ function App() {
             </motion.div>
           </div>
 
-          {showSecretMessage && (
-            <motion.div
-              className="secret-message-content visible"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4 }}
-            >
-              <p><strong>{config.secretMessage.title}</strong></p>
-              {config.secretMessage.content.map((line, idx) => (
-                <p key={idx}>{line}</p>
-              ))}
-              <button className="close-envelope" onClick={() => setShowSecretMessage(false)}>
-                Close Letter 💙
-              </button>
-            </motion.div>
-          )}
+          <AnimatePresence>
+            {showSecretMessage && (
+              <motion.div
+                className="secret-message-content visible"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.4 }}
+              >
+                <p><strong>{config.secretMessage?.title}</strong></p>
+                {config.secretMessage?.content?.map((line, idx) => (
+                  <p key={idx}>{line}</p>
+                ))}
+                <button className="close-envelope" onClick={() => setShowSecretMessage(false)}>
+                  Close Letter 💙
+                </button>
+              </motion.div>
+            )}
+          </AnimatePresence>
 
           <div style={{ height: 20 }} />
           <motion.button
@@ -268,7 +291,7 @@ function App() {
             whileHover={{ scale: 1.05, y: -3 }}
             whileTap={{ scale: 0.95 }}
           >
-            {config.content.giftsSubtitle}
+            {config.content.giftsSubtitle || "Open Your Gifts 🎁"}
           </motion.button>
         </div>
       </div>
@@ -277,6 +300,10 @@ function App() {
 
   // GIFTS VIEW
   if (view === "gifts") {
+    const giftEntries = Object.entries(config.gifts || {});
+    const giftHandlers = [handleGift1Click, handleGift2Click, handleGift3Click];
+    const giftTypes = ["songs", "letter", "photos"];
+
     return (
       <div className="valentine-root gifts">
         <div className="falling-items"></div>
@@ -284,11 +311,11 @@ function App() {
           <h1 className="yay">{config.content.giftsTitle}</h1>
 
           <div className="gifts-container">
-            {Object.entries(config.gifts).map(([key, gift], index) => (
+            {giftEntries.map(([key, gift], index) => (
               <motion.div
                 key={key}
-                className={`gift-card ${giftsOpened.has(["songs", "letter", "photos"][index]) ? 'opened' : ''}`}
-                onClick={[handleGift1Click, handleGift2Click, handleGift3Click][index]}
+                className={`gift-card ${giftsOpened.has(giftTypes[index]) ? 'opened' : ''}`}
+                onClick={giftHandlers[index]}
                 whileHover={{ scale: 1.05, y: -8 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
               >
@@ -309,7 +336,7 @@ function App() {
               transition={{ duration: 0.5 }}
             >
               <div className="love-you-bear-container">
-                <img src={config.media.loveYouBearGif} alt="love you bear" loading="lazy" />
+                <img src={config.media?.loveYouBearGif || config.media?.loveBearGif} alt="love you bear" loading="lazy" />
               </div>
               <p className="all-gifts-text">
                 Yayyyy!! You opened all the gifts, Thangame! 💙<br />
@@ -320,7 +347,7 @@ function App() {
             <>
               <div style={{ height: 15 }} />
               <button className="btn yes" onClick={() => setView("success")}>
-                {config.navigation.backToLove}
+                {config.navigation?.backToLove || "💙 Back to Love"}
               </button>
             </>
           )}
@@ -353,26 +380,34 @@ function App() {
                   transition={{ type: "spring", stiffness: 300 }}
                 >
                   <div className="album-art">
-                    <img src={currentSong.cover} alt="Album Cover" loading="lazy" className="album-image" />
+                    <img 
+                      src={currentSong.cover} 
+                      alt="Album Cover" 
+                      loading="lazy" 
+                      className="album-image"
+                      onError={(e) => { e.target.src = '/src/assets/album-covers/default.jpg'; }}
+                    />
                   </div>
                 </motion.div>
                 <div className="album-info">
-                  <h2 className="album-title">{currentSong.album}</h2>
-                  <p className="album-artist">{currentSong.artist}</p>
+                  <h2 className="album-title">{currentSong.album || "Album"}</h2>
+                  <p className="album-artist">{currentSong.artist || "Artist"}</p>
                 </div>
               </div>
 
               {/* Controls */}
               <div className="media-controls">
                 <div className="current-song-info">
-                  <h3 className="current-title">{currentSong.title}</h3>
-                  <p className="current-artist">{currentSong.memory}</p>
+                  <h3 className="current-title">{currentSong.title || "Song Title"}</h3>
+                  <p className="current-artist">{currentSong.memory || currentSong.emotion || ""}</p>
                 </div>
 
                 {/* Song Story */}
-                <div className="song-story">
-                  <p>{currentSong.story}</p>
-                </div>
+                {currentSong.story && (
+                  <div className="song-story">
+                    <p>{currentSong.story}</p>
+                  </div>
+                )}
 
                 {/* Progress */}
                 <div className="progress-section">
@@ -397,7 +432,7 @@ function App() {
                     onClick={handlePrevious}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
-                    title={config.tooltips.previous}
+                    title={config.tooltips?.previous || "Previous"}
                   >
                     ⏪
                   </motion.button>
@@ -406,7 +441,7 @@ function App() {
                     onClick={handlePlayPause}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
-                    title={isPlaying ? config.tooltips.pause : config.tooltips.play}
+                    title={isPlaying ? (config.tooltips?.pause || "Pause") : (config.tooltips?.play || "Play")}
                   >
                     {isPlaying ? "⏸️" : "▶️"}
                   </motion.button>
@@ -415,7 +450,7 @@ function App() {
                     onClick={handleNext}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
-                    title={config.tooltips.next}
+                    title={config.tooltips?.next || "Next"}
                   >
                     ⏩
                   </motion.button>
@@ -445,7 +480,7 @@ function App() {
               <div className="playlist-container">
                 {songs.map((song, index) => (
                   <motion.div
-                    key={song.id}
+                    key={song.id || index}
                     className={`playlist-item ${index === currentSongIndex ? "active" : ""}`}
                     onClick={() => handleSongSelect(index)}
                     whileHover={{ x: 5 }}
@@ -455,7 +490,7 @@ function App() {
                       <div className="playlist-number">{String(index + 1).padStart(2, "0")}</div>
                       <div className="playlist-info">
                         <h4 className="playlist-title-text">{song.title}</h4>
-                        <p className="playlist-artist">{song.memory}</p>
+                        <p className="playlist-artist">{song.memory || song.emotion || ""}</p>
                       </div>
                     </div>
                     <div className="playlist-duration">{song.duration}</div>
@@ -465,17 +500,19 @@ function App() {
             </div>
           </div>
 
-          <audio
-            ref={audioRef}
-            src={currentSong.audio}
-            onTimeUpdate={handleTimeUpdate}
-            onLoadedMetadata={handleLoadedMetadata}
-            onEnded={handleEnded}
-          />
+          {currentSong.audio && (
+            <audio
+              ref={audioRef}
+              src={currentSong.audio}
+              onTimeUpdate={handleTimeUpdate}
+              onLoadedMetadata={handleLoadedMetadata}
+              onEnded={handleEnded}
+            />
+          )}
 
           <div style={{ height: 15 }} />
           <button className="btn yes" onClick={() => setView("gifts")}>
-            {config.navigation.backToGifts}
+            {config.navigation?.backToGifts || "🎁 Back to Gifts"}
           </button>
         </div>
       </div>
@@ -492,15 +529,22 @@ function App() {
           <p className="subtitle">{config.content.photosSubtitle}</p>
 
           <div className="photos-grid">
-            {config.couplePhotos.map((photo, index) => (
+            {couplePhotos.map((photo, index) => (
               <motion.div
-                key={index}
+                key={photo.id || index}
                 className="photo-card"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
                 whileHover={{ scale: 1.05, rotate: Math.random() > 0.5 ? 2 : -2 }}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
               >
                 <div className={`photo-frame vintage-${(index % 6) + 1}`}>
-                  <img src={photo.image} alt={`Memory ${index + 1}`} loading="lazy" />
+                  <img 
+                    src={photo.image} 
+                    alt={photo.memory || `Memory ${index + 1}`} 
+                    loading="lazy"
+                    onError={(e) => { e.target.src = '/src/assets/couple_photo/placeholder.jpg'; }}
+                  />
                 </div>
                 <p className="photo-caption">{photo.caption}</p>
                 {photo.date && <small style={{ color: 'var(--text-secondary)' }}>{photo.date}</small>}
@@ -510,7 +554,7 @@ function App() {
 
           <div style={{ height: 15 }} />
           <button className="btn yes" onClick={() => setView("gifts")}>
-            {config.navigation.backToGifts}
+            {config.navigation?.backToGifts || "🎁 Back to Gifts"}
           </button>
         </div>
       </div>
@@ -542,7 +586,7 @@ function App() {
               </div>
               <div className="envelope-body">
                 <div className="envelope-seal">
-                  <span className="heart-symbol">{config.media.envelopeSeal}</span>
+                  <span className="heart-symbol">{config.media?.envelopeSeal || "💙"}</span>
                 </div>
               </div>
             </motion.div>
@@ -557,12 +601,12 @@ function App() {
                   transition={{ duration: 0.6, ease: "easeInOut" }}
                 >
                   <div className="letter-content">
-                    <h2 className="letter-title">{config.letter.title}</h2>
-                    {config.letter.content.map((paragraph, index) => (
+                    <h2 className="letter-title">{config.letter?.title || "My Dearest..."}</h2>
+                    {(config.letter?.content || []).map((paragraph, index) => (
                       <p key={index} className="letter-text">{paragraph}</p>
                     ))}
-                    <p className="letter-text" style={{ marginTop: '20px' }}>{config.letter.closing}</p>
-                    <p className="letter-signature">{config.letter.signature}</p>
+                    <p className="letter-text" style={{ marginTop: '20px' }}>{config.letter?.closing}</p>
+                    <p className="letter-signature">{config.letter?.signature}</p>
                   </div>
                 </motion.div>
               )}
@@ -571,7 +615,7 @@ function App() {
 
           <div style={{ height: 15 }} />
           <button className="btn yes" onClick={() => setView("gifts")}>
-            {config.navigation.backToGifts}
+            {config.navigation?.backToGifts || "🎁 Back to Gifts"}
           </button>
         </div>
       </div>
@@ -598,12 +642,13 @@ function App() {
           transition={{ duration: 0.6, ease: "backOut" }}
         >
           <motion.img
-            src={config.media.mainBearGif}
+            src={config.media?.mainBearGif}
             alt="cute bear"
             className="card-image"
             loading="lazy"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
+            onError={(e) => { e.target.style.display = 'none'; }}
           />
 
           <motion.h1
@@ -612,11 +657,11 @@ function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            <span className="name">{config.names.nickname.toUpperCase()},</span>
-            <span className="ask">{config.content.title}</span>
+            <span className="name">{config.names?.nickname?.toUpperCase() || "THANGAME"},</span>
+            <span className="ask">{config.content?.title || config.content?.mainTitle}</span>
           </motion.h1>
 
-          <p className="subtitle">{config.content.subtitle}</p>
+          <p className="subtitle">{config.content?.subtitle}</p>
 
           <motion.div
             className="choices"
@@ -631,14 +676,14 @@ function App() {
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
-              {config.content.yesButtonText}
+              {config.content?.yesButtonText || "YES! 💙"}
             </motion.button>
 
             <motion.button
               className="btn no"
               onMouseEnter={handleNoEnter}
               onMouseLeave={handleNoLeave}
-              onClick={() => setView("success")}
+              onClick={() => { setView("success"); createCelebration(); }}
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
@@ -684,7 +729,7 @@ function App() {
 
         {/* Pros & Cons Popup */}
         <AnimatePresence>
-          {showProsConsPopup && (
+          {showProsConsPopup && slides.length > 0 && (
             <motion.div
               className="overlay"
               onClick={closeProsConsPopup}
@@ -701,21 +746,24 @@ function App() {
               >
                 <button className="close-btn" onClick={closeProsConsPopup}>✕</button>
 
-                <h2 className="pros-cons-title">{config.content.prosConsTitle}</h2>
+                <h2 className="pros-cons-title">{config.content?.prosConsTitle || "Why You Should Say YES 💙"}</h2>
 
                 <div className="cards-container">
                   <motion.div className="card pros-card" whileHover={{ y: -5 }}>
                     <h3 className="card-title">💙 Why YES</h3>
                     <div className="pros-list">
                       <div className="pro-item">
-                        <img
-                          src={slides[currentSlide].gif}
-                          alt="pro"
-                          className="pro-gif"
-                          loading="lazy"
-                        />
+                        {slides[currentSlide]?.gif && (
+                          <img
+                            src={slides[currentSlide].gif}
+                            alt="pro"
+                            className="pro-gif"
+                            loading="lazy"
+                            onError={(e) => { e.target.style.display = 'none'; }}
+                          />
+                        )}
                         <p className="pro-text">
-                          {slides[currentSlide].icon} {slides[currentSlide].text}
+                          {slides[currentSlide]?.icon} {slides[currentSlide]?.text}
                         </p>
                       </div>
                     </div>
@@ -745,13 +793,16 @@ function App() {
                   <motion.div className="card cons-card" whileHover={{ y: -5 }}>
                     <h3 className="card-title">❌ Why NO</h3>
                     <div className="cons-content">
-                      <img
-                        src={config.media.childGif}
-                        alt="no cons"
-                        className="cons-gif"
-                        loading="lazy"
-                      />
-                      <p className="cons-text">{config.content.prosConsSubtitle}</p>
+                      {config.media?.childGif && (
+                        <img
+                          src={config.media.childGif}
+                          alt="no cons"
+                          className="cons-gif"
+                          loading="lazy"
+                          onError={(e) => { e.target.style.display = 'none'; }}
+                        />
+                      )}
+                      <p className="cons-text">{config.content?.prosConsSubtitle || "Nothing! 🥰"}</p>
                     </div>
                   </motion.div>
                 </div>

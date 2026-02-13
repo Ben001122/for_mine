@@ -27,389 +27,151 @@
   "content": {
     "pageTitle": "💙 En Thanga Katti - Our Love Story 💙",
     "mainTitle": "Will you be my Valentine forever, Thangame?",
+    "title": "Will you be my Valentine forever?",
     "subtitle": "This is more than a question... it's a promise of forever 💙",
     "yesButtonText": "YES! Forever & Always 💙",
     "noButtonText": "Let me think... 🤔",
     "successMessage": "💙 You Made My Heart Complete! 💙",
-    "successSubtitle": "I knew your heart beats for me too, Thangame! 🥹❤️"
+    "successSubtitle": "I knew your heart beats for me too, Thangame! 🥹❤️",
+    "giftsTitle": "💝 Your Valentine Gifts, Thangame 💝",
+    "giftsSubtitle": "Click to explore your gifts 🎁",
+    "songsTitle": "🎵 The Soundtrack of Our Love",
+    "songsSubtitle": "Every song tells a piece of our story...",
+    "photosTitle": "📸 Our Precious Memories",
+    "photosSubtitle": "Every photo tells a story of us...",
+    "letterTitle": "💌 A Letter From My Heart",
+    "prosConsTitle": "Why You Should Say YES 💙",
+    "prosConsSubtitle": "Absolutely nothing bad! 🥰"
   },
 
-  "navigationMenu": {
-    "ourStory": "📖 Our Story",
-    "firstCall": "📞 The Call",
-    "youNoticeMe": "👀 You See Me",
-    "yourFamily": "👨‍👩‍👦 Your Family",
-    "myBaby": "👶 My Baby",
-    "ourFuture": "🏠 Our Future",
-    "songs": "🎵 Our Songs",
-    "photos": "📸 Memories",
-    "letter": "💌 My Letter",
-    "backToLove": "💙 Back to Love"
+  "navigation": {
+    "backToLove": "💙 Back to Love",
+    "backToGifts": "🎁 Back to Gifts",
+    "backToPhotos": "📸 Back to Photos",
+    "backToSongs": "🎵 Back to Songs",
+    "backToLetter": "💌 Back to Letter"
   },
 
-  "ourStory": {
-    "title": "📖 Our Beautiful Journey",
-    "subtitle": "Every chapter written by God's grace...",
-    "timeline": [
-      {
-        "id": 1,
-        "icon": "💬",
-        "title": "When Our Paths Crossed",
-        "date": "The Beginning",
-        "description": "God had a beautiful plan... to bring two souls together who were meant to find each other.",
-        "emotion": "Curiosity & Excitement"
-      },
-      {
-        "id": 2,
-        "icon": "📞",
-        "title": "The Call That Changed Everything",
-        "date": "Our First Long Conversation",
-        "description": "That first call... when I heard your voice, your thoughts, your dreams. Your mindset impressed me. Your subconscious thoughts captivated my soul. I knew you were different.",
-        "emotion": "Admiration & Connection"
-      },
-      {
-        "id": 3,
-        "icon": "👀",
-        "title": "You Started Noticing Me",
-        "date": "When You Saw My Heart",
-        "description": "Every little effort I made, you noticed. Every small thing, you appreciated. You made me feel seen, valued, and loved.",
-        "emotion": "Feeling Cherished"
-      },
-      {
-        "id": 4,
-        "icon": "👨‍👩‍👦",
-        "title": "Meeting Your Beautiful Family",
-        "date": "The Wholesome Package",
-        "description": "You didn't just come alone... you came with the most affectionate, warm, and loving family. A blessing wrapped in a blessing.",
-        "emotion": "Warmth & Gratitude"
-      },
-      {
-        "id": 5,
-        "icon": "💍",
-        "title": "Our Engagement",
-        "date": "The Promise",
-        "description": "When we promised each other forever... when our families became one... when God sealed our bond.",
-        "emotion": "Joy & Commitment"
-      },
-      {
-        "id": 6,
-        "icon": "💙",
-        "title": "Today & Forever",
-        "date": "Present Moment",
-        "description": "Here we are, building our love story one day at a time, with God at the center of everything we do.",
-        "emotion": "Deep Love & Hope"
-      }
-    ]
+  "tooltips": {
+    "previous": "Previous",
+    "next": "Next",
+    "play": "Play",
+    "pause": "Pause"
   },
 
-  "firstCall": {
-    "title": "📞 The Call That Started Everything",
-    "subtitle": "When your words touched my soul...",
-    "mainImage": "/src/assets/gifs/phone-call.gif",
-    "content": {
-      "opening": "I still remember that call, Thangame...",
-      "paragraphs": [
-        {
-          "title": "Your Mindset Impressed Me 🧠",
-          "text": "The way you think, the way you process things, the depth of your thoughts... I was amazed. You weren't just talking; you were sharing pieces of your soul with me.",
-          "icon": "💭"
-        },
-        {
-          "title": "Your Subconscious Thoughts 💫",
-          "text": "Even in the things you didn't mean to say out loud, I could see the beautiful person you are. Your values, your dreams, your pure heart... everything aligned with what I had been praying for.",
-          "icon": "✨"
-        },
-        {
-          "title": "The Connection Was Instant 🔗",
-          "text": "Hours felt like minutes. Words flowed like we had known each other forever. That call wasn't just a conversation... it was the beginning of our forever.",
-          "icon": "🌟"
-        },
-        {
-          "title": "I Knew You Were The One 💙",
-          "text": "By the end of that call, something in my heart whispered, 'This is him. This is the one God has chosen for you.' And my heart hasn't stopped believing that since.",
-          "icon": "💕"
-        }
-      ],
-      "closing": "That call was God's way of saying, 'Here's your person.' And I'm so grateful I answered. 💙"
+  "gifts": {
+    "gift1": {
+      "image": "/src/assets/gift/gift1.png",
+      "title": "🎵 Our Songs",
+      "description": "The melodies of our love"
     },
-    "quote": "\"When the right person comes along, even a simple call can change your entire life's story.\""
+    "gift2": {
+      "image": "/src/assets/gift/gift2.png",
+      "title": "💌 Love Letter",
+      "description": "Words from my heart"
+    },
+    "gift3": {
+      "image": "/src/assets/gift/gift3.png",
+      "title": "📸 Our Memories",
+      "description": "Captured moments together"
+    }
   },
 
-  "youNoticeMe": {
-    "title": "👀 You See Me Like No One Else",
-    "subtitle": "Every effort, every detail, you notice it all...",
-    "mainImage": "/src/assets/gifs/notice-heart.gif",
-    "introduction": "Thangame, do you know what makes me fall for you more every day?",
-    "things": [
-      {
-        "id": 1,
-        "icon": "🎀",
-        "title": "The Little Things",
-        "description": "When I put extra effort into something small, you notice. When I change something subtle, you see it. You make me feel like every little thing I do matters.",
-        "yourResponse": "You always say something that makes my heart flutter..."
-      },
-      {
-        "id": 2,
-        "icon": "😊",
-        "title": "My Efforts for You",
-        "description": "Every time I try to make you smile, you acknowledge it. Every surprise, every gesture, every word of love... you receive it with such genuine appreciation.",
-        "yourResponse": "Your eyes light up, and that's all I need..."
-      },
-      {
-        "id": 3,
-        "icon": "💪",
-        "title": "My Struggles & Growth",
-        "description": "When I'm trying to be better, you see it. When I'm growing, you cheer me on. You notice my battles even when I don't speak about them.",
-        "yourResponse": "You support me silently but powerfully..."
-      },
-      {
-        "id": 4,
-        "icon": "❤️",
-        "title": "My Love for You",
-        "description": "Most importantly, you see how much I love you. You don't take it for granted. You cherish it, protect it, and return it tenfold.",
-        "yourResponse": "And that makes me want to love you even more..."
-      }
-    ],
-    "closing": "In a world where people often overlook the small things, you make me feel like I'm the only thing worth looking at. Thank you for seeing me, Thangame. 💙",
-    "quote": "\"The greatest gift you can give someone is your attention, and you give me yours so beautifully.\""
-  },
+  "songs": [
+    {
+      "id": 1,
+      "category": "first",
+      "title": "Anal Mele Panithuli",
+      "icon": "🎤",
+      "story": "I still remember the butterflies in my stomach when you first sang for me. Your voice touched my soul in ways I can't explain. This song will forever be special because it was the FIRST.",
+      "memory": "The beginning of your serenades... 💙",
+      "emotion": "Butterflies & First Feelings",
+      "duration": "5:10",
+      "album": "Where It All Began",
+      "artist": "My Thangame",
+      "cover": "/src/assets/album-covers/anal_mele.jpeg",
+      "audio": "/src/assets/songs/Anal-Mele-Panithuli.mp3"
+    },
+    {
+      "id": 2,
+      "category": "comfort",
+      "title": "Kanne Kalaimaane",
+      "icon": "🤗",
+      "story": "I was feeling low, broken, lost... and then you sang this song. Your voice wrapped around me like a warm hug. You didn't just sing words; you sang healing into my heart.",
+      "memory": "You're my comfort zone... 💙",
+      "emotion": "Healing & Comfort",
+      "duration": "04:20",
+      "album": "My Healer",
+      "artist": "My Thangame",
+      "cover": "/src/assets/album-covers/kanne_kalaimaane.jpeg",
+      "audio": "/src/assets/songs/Kanne-Kalaimaane.mp3"
+    },
+    {
+      "id": 3,
+      "category": "dedication",
+      "title": "Yaeley Yaeley",
+      "icon": "✨",
+      "story": "You said every lyric of this song reminded you of me. You said it perfectly describes who I am. Now, every time I hear it, I blush thinking about your words.",
+      "memory": "I'm in every lyric... 💙",
+      "emotion": "Feeling Special & Loved",
+      "duration": "4:38",
+      "album": "You In Every Word",
+      "artist": "My Thangame",
+      "cover": "/src/assets/album-covers/yelae_yelae.jpeg",
+      "audio": "/src/assets/songs/Yaeley-Yaeley-Maruthu.mp3"
+    },
+    {
+      "id": 4,
+      "category": "classic",
+      "title": "Poove Sempoove",
+      "icon": "🎵",
+      "story": "There's something about old 90s songs that hit different, especially when YOU sing them. The nostalgia, the emotion, the timeless romance... you bring these classics to life.",
+      "memory": "Old songs, new love... 💙",
+      "emotion": "Timeless Romance",
+      "duration": "5:52",
+      "album": "Timeless Love",
+      "artist": "My Thangame",
+      "cover": "/src/assets/album-covers/Poove-Sempoove.jpg",
+      "audio": "/src/assets/songs/Poove-Sempoove.mp3"
+    },
+    {
+      "id": 5,
+      "category": "duet",
+      "title": "Aandipatti Mariappan Pondatti",
+      "icon": "👫",
+      "story": "This song is extra special because we sang it TOGETHER. Our voices blending, harmonizing, becoming one... just like our hearts. This is OUR song.",
+      "memory": "Two voices, one love... 💙",
+      "emotion": "Unity & Harmony",
+      "duration": "5:01",
+      "album": "Our Harmony",
+      "artist": "Thangame & Me",
+      "cover": "/src/assets/album-covers/Aandipatti.jpeg",
+      "audio": "/src/assets/songs/Aandipatti-Mariappan-Pondatti.mp3"
+    },
+    {
+      "id": 6,
+      "category": "latest",
+      "title": "Neelothi",
+      "icon": "🌟",
+      "story": "The most recent addition to our playlist. Fresh melody, same loving heart. You never stop making me fall in love with your voice, with you, with us.",
+      "memory": "Still serenading me... 💙",
+      "emotion": "Continuous Love",
+      "duration": "4:34",
+      "album": "Fresh Love",
+      "artist": "My Thangame",
+      "cover": "/src/assets/album-covers/neelothi.jpg",
+      "audio": "/src/assets/songs/Neelothi.mp3"
+    }
+  ],
 
-  "yourFamily": {
-    "title": "👨‍👩‍👦 The Beautiful Family You Brought",
-    "subtitle": "You came as a wholesome package of love...",
-    "mainImage": "/src/assets/gifs/family-love.gif",
-    "introduction": "When I said yes to you, I didn't just get you... I got the most beautiful bonus – your family. 💙",
-    "familyMembers": [
-      {
-        "id": 1,
-        "role": "Your Parents",
-        "icon": "👨‍👩‍👦",
-        "title": "The Pillars of Love",
-        "description": "Your amma and appa... they welcomed me with open hearts. Their warmth, their affection, their blessings... I feel so loved and accepted. They raised such a beautiful soul – you.",
-        "feeling": "I feel like their own child 🥹"
-      },
-      {
-        "id": 2,
-        "role": "Your Siblings/Family",
-        "icon": "👫",
-        "title": "Extended Love",
-        "description": "Akka, Rajesh anna, Thithu... Your family treats me like I've always belonged. Every interaction is filled with warmth, care, and genuine affection. They make me feel at home.",
-        "feeling": "I gained a whole new family 💕"
-      }
-    ],
-    "myFeelings": [
-      "The way they include me in everything...",
-      "The way they care about my well-being...",
-      "The way they make me feel like family...",
-      "The way they raised you to be this amazing person...",
-      "The way they shower us with blessings..."
-    ],
-    "gratitude": "Thangame, you didn't just give me a partner... you gave me a family. A warm, affectionate, loving family that I'm so proud to be a part of. Your family is my family now, and I promise to love and cherish them just like I cherish you. 💙",
-    "quote": "\"When you marry someone, you marry their whole world... and I couldn't have asked for a more beautiful world to be a part of.\""
-  },
-
-  "myBaby": {
-    "title": "👶 My Baby To Treasure Forever",
-    "subtitle": "Yes, you're my baby, and I'll protect you always...",
-    "mainImage": "/src/assets/gifs/treasure-love.gif",
-    "introduction": "You know what, Thangame? Behind that strong, responsible man... I see a baby. MY baby. And I want to treasure you forever. 💙",
-    "babySides": [
-      {
-        "id": 1,
-        "icon": "😊",
-        "title": "Your Innocent Smile",
-        "description": "When you smile with pure joy, like a child who just got their favorite candy... my heart melts. That innocent smile is my most treasured sight.",
-        "myPromise": "I'll always give you reasons to smile like that 💙"
-      },
-      {
-        "id": 2,
-        "icon": "🥺",
-        "title": "When You're Vulnerable",
-        "description": "When you let your guard down and show me your soft side... when you share your fears, your worries, your insecurities... I feel so honored that you trust me.",
-        "myPromise": "I'll always be your safe space 💙"
-      },
-      {
-        "id": 3,
-        "icon": "😤",
-        "title": "Your Cute Tantrums",
-        "description": "Yes, even your little mood swings and tantrums are adorable to me. When you get frustrated or pouty... I just want to hug you and make everything better.",
-        "myPromise": "I'll always handle your moods with love 💙"
-      },
-      {
-        "id": 4,
-        "icon": "🤗",
-        "title": "When You Need Comfort",
-        "description": "When you're tired, stressed, or just need someone... I want to be that person. Let me take care of you. Let me be your comfort zone.",
-        "myPromise": "I'll always be here to hold you 💙"
-      },
-      {
-        "id": 5,
-        "icon": "🌟",
-        "title": "Your Pure Heart",
-        "description": "Your kindness, your genuine care for others, your beautiful soul... these are the baby-like pure qualities that make you so special to me.",
-        "myPromise": "I'll always protect that purity 💙"
-      }
-    ],
-    "declaration": "Thangame, I want to cherish these feelings forever. I want to treasure you like the precious gift you are. You're not just my partner, my love, my best friend... you're my BABY. And I promise to nurture this love, protect your heart, and make you feel treasured every single day of our lives. 💙",
-    "quote": "\"Behind every strong person is a soft soul that just needs to be loved gently... and I'll love you gently forever.\""
-  },
-
-  "ourFuture": {
-    "title": "🏠 Building Our God-Centered Future",
-    "subtitle": "Our dreams, our prayers, our forever...",
-    "mainImage": "/src/assets/gifs/future-together.gif",
-    "introduction": "With God's grace, here's the beautiful future I dream of with you, Thangame... 💙",
-    "dreams": [
-      {
-        "id": 1,
-        "icon": "✝️",
-        "title": "A God-Centered Home",
-        "description": "A home where God is the foundation. Where prayers are our morning routine. Where faith guides our decisions. Where His love overflows through us.",
-        "verse": "\"As for me and my house, we will serve the Lord.\" - Joshua 24:15",
-        "prayer": "Lord, build our home on Your rock 🙏"
-      },
-      {
-        "id": 2,
-        "icon": "💑",
-        "title": "Growing Together",
-        "description": "I dream of us growing old together, learning together, facing life together. Supporting each other's dreams, celebrating each other's wins, healing each other's wounds.",
-        "verse": "\"Two are better than one... for if they fall, one will lift up the other.\" - Ecclesiastes 4:9-10",
-        "prayer": "Lord, help us grow stronger together 🙏"
-      },
-      {
-        "id": 3,
-        "icon": "👶",
-        "title": "Our Little Blessings",
-        "description": "Someday, when God blesses us with children... I dream of raising them in faith, love, and joy. Little versions of us, learning about God's love through our family.",
-        "verse": "\"Children are a heritage from the Lord, offspring a reward from him.\" - Psalm 127:3",
-        "prayer": "Lord, bless us with beautiful children in Your time 🙏"
-      },
-      {
-        "id": 4,
-        "icon": "🤝",
-        "title": "Serving Together",
-        "description": "I dream of us serving God together - in our church, in our community, in each other's lives. Using our blessings to bless others.",
-        "verse": "\"Each of you should use whatever gift you have received to serve others.\" - 1 Peter 4:10",
-        "prayer": "Lord, use us for Your glory 🙏"
-      },
-      {
-        "id": 5,
-        "icon": "💕",
-        "title": "Forever Love",
-        "description": "And through it all, I dream of our love staying strong - through every season, every challenge, every joy. A love that reflects Christ's love for us.",
-        "verse": "\"Love is patient, love is kind... It always protects, always trusts, always hopes, always perseveres.\" - 1 Corinthians 13:4-7",
-        "prayer": "Lord, help our love endure forever 🙏"
-      }
-    ],
-    "ourPrayer": "Dear Lord, thank You for bringing us together. Thank You for this beautiful love. We surrender our future into Your hands. Guide us, protect us, and help us build a family that glorifies You. May our home be filled with Your presence, our hearts with Your love, and our lives with Your purpose. In Jesus' name, Amen. 🙏💙",
-    "commitment": "Thangame, I commit to walking this journey with you, hand in hand, with God leading the way. Whatever comes, we face it together. Whatever God blesses us with, we steward it together. Forever and always. 💙",
-    "quote": "\"A cord of three strands is not quickly broken.\" - Ecclesiastes 4:12"
-  },
-
-  "songs": {
-    "title": "🎵 The Soundtrack of Our Love",
-    "subtitle": "Every song tells a piece of our story...",
-    "introduction": "Thangame, your voice is my favorite sound in this world. Here are the songs that define our journey... 💙",
-    "playlist": [
-      {
-        "id": 1,
-        "category": "first",
-        "title": "The First Song You Sang For Me",
-        "icon": "🎤",
-        "story": "I still remember the butterflies in my stomach when you first sang for me. Your voice touched my soul in ways I can't explain. This song will forever be special because it was the FIRST.",
-        "memory": "The beginning of your serenades... 💙",
-        "emotion": "Butterflies & First Feelings",
-        "duration": "5:10",
-        "album": "Where It All Began",
-        "artist": "My Thangame",
-        "cover": "/src/assets/album-covers/anal_mele.jpeg",
-        "audio": "/src/assets/songs/Anal-Mele-Panithuli.mp3"
-      },
-      {
-        "id": 2,
-        "category": "comfort",
-        "title": "When You Lifted My Spirits",
-        "icon": "🤗",
-        "story": "I was feeling low, broken, lost... and then you sang this song. Your voice wrapped around me like a warm hug. You didn't just sing words; you sang healing into my heart.",
-        "memory": "You're my comfort zone... 💙",
-        "emotion": "Healing & Comfort",
-        "duration": "04:20",
-        "album": "My Healer",
-        "artist": "My Thangame",
-        "cover": "/src/assets/album-covers/kanne_kalaimaane.jpeg",
-        "audio": "/src/assets/songs/Kanne-Kalaimaane.mp3"
-      },
-      {
-        "id": 3,
-        "category": "dedication",
-        "title": "The Song That Describes Me",
-        "icon": "✨",
-        "story": "You said every lyric of this song reminded you of me. You said it perfectly describes who I am. Now, every time I hear it, I blush thinking about your words.",
-        "memory": "I'm in every lyric... 💙",
-        "emotion": "Feeling Special & Loved",
-        "duration": "4:38",
-        "album": "You In Every Word",
-        "artist": "My Thangame",
-        "cover": "/src/assets/album-covers/yelae_yelae.jpeg",
-        "audio": "/src/assets/songs/Yaeley-Yaeley-Maruthu.mp3"
-      },
-      {
-        "id": 4,
-        "category": "classic",
-        "title": "Our 90s Classic",
-        "icon": "🎵",
-        "story": "There's something about old 90s songs that hit different, especially when YOU sing them. The nostalgia, the emotion, the timeless romance... you bring these classics to life.",
-        "memory": "Old songs, new love... 💙",
-        "emotion": "Timeless Romance",
-        "duration": "5:52",
-        "album": "Timeless Love",
-        "artist": "My Thangame",
-        "cover": "/src/assets/album-covers/Poove-Sempoove.jpg",
-        "audio": "/src/assets/songs/Poove-Sempoove.mp3"
-      },
-      {
-        "id": 5,
-        "category": "duet",
-        "title": "Our Duet Together",
-        "icon": "👫",
-        "story": "This song is extra special because we sang it TOGETHER. Our voices blending, harmonizing, becoming one... just like our hearts. This is OUR song.",
-        "memory": "Two voices, one love... 💙",
-        "emotion": "Unity & Harmony",
-        "duration": "5:01",
-        "album": "Our Harmony",
-        "artist": "Thangame & Me",
-        "cover": "/src/assets/album-covers/Aandipatti.jpeg",
-        "audio": "/src/assets/songs/Aandipatti-Mariappan-Pondatti.mp3"
-      },
-      {
-        "id": 6,
-        "category": "latest",
-        "title": "Your Latest Serenade",
-        "icon": "🌟",
-        "story": "The most recent addition to our playlist. Fresh melody, same loving heart. You never stop making me fall in love with your voice, with you, with us.",
-        "memory": "Still serenading me... 💙",
-        "emotion": "Continuous Love",
-        "duration": "4:34",
-        "album": "Fresh Love",
-        "artist": "My Thangame",
-        "cover": "/src/assets/album-covers/neelothi.jpg",
-        "audio": "/src/assets/songs/Neelothi.mp3"
-      }
-    ]
-  },
-
-  "photos": {
-  "title": "📸 Our Precious Memories",
-  "subtitle": "Every photo tells a story of us...",
-  "introduction": "Thangame, these moments captured our journey... each one holds a piece of my heart 💙",
-  "gallery": [
+  "couplePhotos": [
     {
       "id": 1,
       "image": "/src/assets/couple_photo/pic_that_imprseed_me.jpg",
       "caption": "The picture that made my heart skip a beat 😍",
       "memory": "When I First Saw This",
       "emotion": "Instant Attraction",
-      "story": "This photo... when I first saw it, I couldn't look away. The way you looked, the energy you carried... I was impressed beyond words. This was the moment I knew I wanted to know you more."
+      "date": "The Beginning"
     },
     {
       "id": 2,
@@ -417,7 +179,7 @@
       "caption": "The day we promised forever 💍✨",
       "memory": "Our Sacred Promise",
       "emotion": "Divine Commitment",
-      "story": "Our engagement day - when God joined our hands and blessed our union. When our families became one. When our forever officially began. This is the moment our prayers were answered."
+      "date": "Engagement Day"
     },
     {
       "id": 3,
@@ -425,7 +187,7 @@
       "caption": "Just us being perfectly us 💙",
       "memory": "Our Natural Chemistry",
       "emotion": "Comfortable Love",
-      "story": "No pretense, no performance... just you and me being ourselves. This is who we are together - natural, comfortable, perfectly matched. This is the 'us' I want to be forever."
+      "date": "Together"
     },
     {
       "id": 4,
@@ -433,7 +195,7 @@
       "caption": "When we prayed together - God at our center 🙏💙",
       "memory": "Seeking God Together",
       "emotion": "Spiritual Unity",
-      "story": "This moment... when we bowed our heads together and talked to God as one. This is the foundation of our relationship - faith, prayer, and God's presence in everything we do. A cord of three strands cannot be broken."
+      "date": "Prayer Time"
     },
     {
       "id": 5,
@@ -441,7 +203,7 @@
       "caption": "Your voice, your passion, my admiration 🎤🎵",
       "memory": "Watching You Shine",
       "emotion": "Pride & Admiration",
-      "story": "Seeing you sing with such passion and talent... my heart swelled with pride. That's MY Thangam, sharing his gift with me. Your voice is magic, and I'm blessed to hear it every day."
+      "date": "Your Concert"
     },
     {
       "id": 6,
@@ -449,7 +211,7 @@
       "caption": "The chef I'm blessed to have 👨‍🍳💕",
       "memory": "Tasting Your Love",
       "emotion": "Feeling Cared For",
-      "story": "The first time I saw you cook... it wasn't just food, it was love on a plate. Waiting to taste it as every bite will be filled with your care, your effort, your desire to make me happy. Your food is not just for my stomach, but my soul."
+      "date": "Kitchen Adventures"
     },
     {
       "id": 7,
@@ -457,7 +219,7 @@
       "caption": "Even in simple moments, you're beautiful 🧹✨",
       "memory": "Everyday Love",
       "emotion": "Finding Beauty in Ordinary",
-      "story": "Watching you do something as simple as cleaning... and finding it endearing. It's these little everyday moments that make me realize - I want to do life with you. The boring, the mundane, the ordinary - it all becomes special with you."
+      "date": "Daily Life"
     },
     {
       "id": 8,
@@ -465,7 +227,7 @@
       "caption": "Peaceful, vulnerable, mine 😴💙",
       "memory": "Guardian of Your Peace",
       "emotion": "Protective Love",
-      "story": "Watching you sleep so peacefully... this is my baby. In these quiet moments, all your walls are down, all guards are off. You're completely vulnerable, completely at peace. And I feel honored to be trusted with this version of you. I want to protect your peace forever."
+      "date": "Quiet Moments"
     },
     {
       "id": 9,
@@ -473,7 +235,7 @@
       "caption": "You lifted me when I was down 🤗💫",
       "memory": "My Comforter",
       "emotion": "Healing & Gratitude",
-      "story": "I was feeling so low that day... broken, lost, overwhelmed. And then there you were - with your words, your presence, your comfort. You didn't try to fix everything; you just held space for me. You reminded me I'm not alone. You're my safe place, Thangame."
+      "date": "You Saved Me"
     },
     {
       "id": 10,
@@ -481,7 +243,7 @@
       "caption": "The way you see 'us' makes my heart full 💬❤️",
       "memory": "Understanding Our Love",
       "emotion": "Emotional Connection",
-      "story": "When you explained what 'us' means to you... the way you articulated our relationship, our connection, our future... I fell in love all over again. You GET it. You get US. And hearing you put it into words was one of the most beautiful moments."
+      "date": "Deep Talks"
     },
     {
       "id": 11,
@@ -489,45 +251,25 @@
       "caption": "When you inspire me to be better ⚡💪",
       "memory": "My Motivator",
       "emotion": "Inspired & Empowered",
-      "story": "Your sudden bursts of motivation are contagious! When you get that fire in your eyes and encourage me to try something new, to push myself, to grow... you make me want to be the best version of myself. You don't just love me as I am; you inspire me to become who I'm meant to be."
+      "date": "Growth Together"
     }
   ],
-  "closingNote": "Every photo is a treasure, every memory is a blessing. Thank you for giving me a lifetime worth capturing, Thangame. 💙📸"
-},
 
   "letter": {
-    "title": "💌 A Letter From My Heart",
-    "subtitle": "Words I want you to keep forever...",
-    "envelope": {
-      "sealed": true,
-      "sealEmoji": "💙"
-    },
-    "letterContent": {
-      "date": "Valentine's Day 2026",
-      "greeting": "My Dearest Thangame,",
-      "paragraphs": [
-        "As I write this letter, my heart is overflowing with emotions I never knew I could feel. You've changed my world in the most beautiful way, and I want you to know just how much you mean to me.",
-        
-        "Remember our first call? The one where we talked for hours and it felt like minutes? Your mindset, your thoughts, your way of seeing the world... everything about you impressed me. I knew from that moment that you were different. You were special. You were the answer to prayers I didn't even know I was praying.",
-        
-        "What amazes me most is how you NOTICE me. In a world where people often overlook the little things, you see every effort I make. You appreciate every small gesture. You make me feel valued, cherished, and loved. Do you know how rare that is? Do you know how much that means to me?",
-        
-        "And then there's your family – the beautiful, wholesome package you came with. They welcomed me with such warmth and affection. They made me feel like I belonged. Through them, I see why you are the way you are. You come from love, and you give love so effortlessly.",
-        
-        "You know what I see when I look at you, Thangame? I see my baby. Yes, behind that strong, responsible man is a soft, beautiful soul that I want to treasure forever. Your innocent smile, your vulnerable moments, your cute tantrums, your need for comfort – I cherish all of it. I want to protect you, care for you, and love you in ways you've never been loved before.",
-        
-        "I'm feeling so many emotions right now, and I want to hold onto these feelings forever. I want to cherish every moment we have together. I want to spend our lifespan building something beautiful – a God-centered, loving family that reflects His grace in everything we do.",
-        
-        "With God at the center of our relationship, I know we can overcome anything. I dream of a home filled with faith, love, laughter, and little blessings. I dream of growing old with you, serving God together, and creating a legacy of love.",
-        
-        "Thank you for being you. Thank you for loving me. Thank you for seeing me. Thank you for your family. Thank you for your songs. Thank you for being my comfort, my joy, my best friend, my baby, my FOREVER.",
-        
-        "I love you more than words can express, but I'll spend the rest of my life trying to show you."
-      ],
-      "closing": "With all my heart, all my soul, and all my love,",
-      "signature": "Forever Yours,\n Ben ❤️",
-      "postScript": "P.S. - Keep singing for me, Thangame. Your voice is my home. 🎵💙"
-    }
+    "title": "My Dearest Thangame,",
+    "content": [
+      "As I write this letter, my heart is overflowing with emotions I never knew I could feel. You've changed my world in the most beautiful way, and I want you to know just how much you mean to me.",
+      "Remember our first call? The one where we talked for hours and it felt like minutes? Your mindset, your thoughts, your way of seeing the world... everything about you impressed me. I knew from that moment that you were different. You were special. You were the answer to prayers I didn't even know I was praying.",
+      "What amazes me most is how you NOTICE me. In a world where people often overlook the little things, you see every effort I make. You appreciate every small gesture. You make me feel valued, cherished, and loved. Do you know how rare that is? Do you know how much that means to me?",
+      "And then there's your family – the beautiful, wholesome package you came with. Akka, Rajesh anna, Thithu... They welcomed me with such warmth and affection. They made me feel like I belonged. Through them, I see why you are the way you are. You come from love, and you give love so effortlessly.",
+      "You know what I see when I look at you, Thangame? I see my baby. Yes, behind that strong, responsible man is a soft, beautiful soul that I want to treasure forever. Your innocent smile, your vulnerable moments, your cute tantrums, your need for comfort – I cherish all of it. I want to protect you, care for you, and love you in ways you've never been loved before.",
+      "I'm feeling so many emotions right now, and I want to hold onto these feelings forever. I want to cherish every moment we have together. I want to spend our lifespan building something beautiful – a God-centered, loving family that reflects His grace in everything we do.",
+      "With God at the center of our relationship, I know we can overcome anything. I dream of a home filled with faith, love, laughter, and little blessings. I dream of growing old with you, serving God together, and creating a legacy of love.",
+      "Thank you for being you. Thank you for loving me. Thank you for seeing me. Thank you for your family. Thank you for your songs. Thank you for being my comfort, my joy, my best friend, my baby, my FOREVER.",
+      "I love you more than words can express, but I'll spend the rest of my life trying to show you."
+    ],
+    "closing": "With all my heart, all my soul, and all my love,",
+    "signature": "Forever Yours,\nBen ❤️"
   },
 
   "secretMessage": {
@@ -546,6 +288,39 @@
     ]
   },
 
+  "prosCons": [
+    {
+      "gif": "/src/assets/cook-bear.gif",
+      "text": "I'll cook(try🥹) varieties of food for you 🍳",
+      "icon": "👨‍🍳"
+    },
+    {
+      "gif": "/src/assets/comfort-bear.gif",
+      "text": "I can give you so much love and comfort 💕",
+      "icon": "🤗"
+    },
+    {
+      "gif": "/src/assets/cute-bear.gif",
+      "text": "I'll care and listen to you always 👂",
+      "icon": "💙"
+    },
+    {
+      "gif": "/src/assets/kiss-bears.gif",
+      "text": "Unlimited hugs & kisses (non-negotiable 😏)",
+      "icon": "💋"
+    },
+    {
+      "gif": "/src/assets/music-bear.gif",
+      "text": "Live singing performances just for you 🎶",
+      "icon": "🎤"
+    },
+    {
+      "gif": "/src/assets/love-you-bear.gif",
+      "text": "A lifetime of love and loyalty 💙",
+      "icon": "💍"
+    }
+  ],
+
   "animations": {
     "fallingItems": ["💙", "🤎", "🎵", "❤️", "✨", "💕", "🌟", "💫", "🙏"],
     "celebrationItems": ["💙", "🤎", "✨", "🎵", "💕", "🎉", "🌹", "💫", "⭐", "❤️"]
@@ -554,15 +329,11 @@
   "media": {
     "mainBearGif": "/src/assets/cute-bear.gif",
     "loveBearGif": "/src/assets/love-you-bear.gif",
+    "loveYouBearGif": "/src/assets/love-you-bear.gif",
     "musicBearGif": "/src/assets/music-bear.gif",
     "comfortBearGif": "/src/assets/comfort-bear.gif",
-    "familyGif": "/src/assets/gifs/family-love.gif",
-    "babyGif": "/src/assets/gifs/baby-love.gif",
-    "prayerGif": "/src/assets/gifs/prayer.gif",
-    "heartGif": "/src/assets/gifs/heart-love.gif",
-    "photosGif": "/src/assets/photo-bear.gif",
-    "letterGif": "/src/assets/gifs/letter-love.gif",
-    "futureGif": "/src/assets/gifs/future-together.gif"
+    "childGif": "/src/assets/cute-bear.gif",
+    "envelopeSeal": "💙"
   },
 
   "footer": {
