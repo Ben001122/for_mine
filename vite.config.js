@@ -1,36 +1,24 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: './',
   build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: false,
+    minify: 'terser',
     rollupOptions: {
       output: {
-        manualChunks: (id) => {
-          if (id.includes('node_modules')) {
-            if (id.includes('react') || id.includes('react-dom')) {
-              return 'vendor-react';
-            }
-            if (id.includes('framer-motion')) {
-              return 'vendor-animations';
-            }
-            return 'vendor';
-          }
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'framer-motion']
         }
       }
-    },
-    chunkSizeWarningLimit: 1000,
-    cssCodeSplit: true,
-    target: 'es2015',
-    minify: true,
-  },
-  optimizeDeps: {
-    include: ['react', 'react-dom', 'framer-motion']
+    }
   },
   server: {
-    headers: {
-      'Cache-Control': 'public, max-age=31536000'
-    }
+    port: 3000,
+    open: true
   }
 })
