@@ -233,27 +233,54 @@ function App() {
             ))}
           </div>
 
-          {allGiftsOpened ? (
-            <motion.div className="all-gifts-opened" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }}>
-              <div className="love-you-bear-container"><img src={config.media?.loveYouBearGif || config.media?.loveYouBearGif} alt="love you bear" loading="lazy" /></div>
-              <p 
-                className="all-gifts-text" 
-                style={{ 
-                  fontFamily: "'Great Vibes', cursive",
-                  fontSize: '1.9em',
-                  lineHeight: '1.6' 
+          {allGiftsOpened && (
+          <motion.div
+            className="all-gifts-opened"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+          >
+            <div className="love-you-bear-container">
+              <img
+                src={config.media?.loveYouBearGif}
+                alt="love you bear"
+                loading="lazy"
+              />
+            </div>
+
+            <p
+              className="all-gifts-text"
+              style={{
+                fontFamily: "'Great Vibes', cursive",
+                fontSize: "1.9em",
+                lineHeight: "1.6",
+              }}
+            >
+              Yayyyy!! You opened all the gifts, Thangame! 💕
+              <br />
+              <span style={{ fontSize: "1.2em" }}>
+                I Love You Sooooo Muchhhhhh! 🥰
+              </span>
+            </p>
+
+            <div style={{ marginTop: "20px" }}>
+              <motion.button
+                className="btn yes"
+                onClick={() => {
+                  setView("success");
+                  createCelebration();
                 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
-                Yayyyy!! You opened all the gifts, Thangame! 💕<br /><span style={{ fontSize: '1.2em' }}>I Love You Sooooo Muchhhhhh! 🥰</span>
-              </p>
-            </motion.div>
-          ) : (
-            <><div style={{ height: 15 }} /><button className="btn yes" onClick={() => setView("success")}>{config.navigation?.backToLove || "💖 Back to Love"}</button></>
-          )}
-        </div>
+                {config.navigation?.backToLove || "💖 Back to Love"}
+              </motion.button>
+            </div>
+          </motion.div>
+        )}
       </div>
-    );
-  }
+    </div>
+  );
+}
 
   if (view === "songs") {
     return (
