@@ -240,7 +240,7 @@ function App() {
               className="all-gifts-text" 
               style={{ fontFamily: "'Great Vibes', cursive" }}
             >
-              Yayyyy!! You opened all the gifts, Thangame! 💕<br />I LOVE YOU SO MUCH! 🥰
+              Yayyyy!! You opened all the gifts, Thangame! 💕<br />style={{ fontFamily: "'Great Vibes', cursive" }}I LOVE YOU SO MUCH! 🥰
             </p>
           </motion.div>
         ) : (
