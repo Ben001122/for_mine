@@ -167,7 +167,7 @@
   "couplePhotos": [
     {
       "id": 1,
-      "image": "/assets/couple_photo/pic_that_imprseed_me.jpg",
+      "image": "public/assets/couple_photo/pic_that_imprseed_me.jpg",
       "caption": "The picture that made my heart skip a beat 😍",
       "memory": "When I First Saw This",
       "emotion": "Instant Attraction",
@@ -175,7 +175,7 @@
     },
     {
       "id": 2,
-      "image": "/assets/couple_photo/engagement.jpg",
+      "image": "dist/assets/couple_photo/engagement.jpg",
       "caption": "The day we promised forever 💍✨",
       "memory": "Our Sacred Promise",
       "emotion": "Divine Commitment",
