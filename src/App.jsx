@@ -173,7 +173,7 @@ function App() {
           <h1 className="yay">{config.content.successMessage}</h1>
           <p className="subtitle small">{config.content.successSubtitle}</p>
           <div className="image-card">
-            <img src={config.media?.loveYouBearGif || config.media?.loveBearGif} alt="love you" loading="lazy" />
+            <img src={config.media?.loveBearGif || config.media?.loveBearGif} alt="love you" loading="lazy" />
           </div>
           <motion.div
             className="love-text-container"
@@ -234,7 +234,7 @@ function App() {
           </div>
           {allGiftsOpened ? (
             <motion.div className="all-gifts-opened" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }}>
-              <div className="love-you-bear-container"><img src={config.media?.loveYouBearGif || config.media?.loveBearGif} alt="love you bear" loading="lazy" /></div>
+              <div className="love-you-bear-container"><img src={config.media?.loveYouBearGif || config.media?.loveYouBearGif} alt="love you bear" loading="lazy" /></div>
               <p className="all-gifts-text">Yayyyy!! You opened all the gifts, Thangame! 💕<br />I LOVE YOU SO MUCH! 🥰</p>
             </motion.div>
           ) : (
