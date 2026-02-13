@@ -175,7 +175,7 @@ body { font-family: var(--font-family-body); background: var(--background-gradie
 /* FIX: Frame uses aspect-ratio for consistent shape */
 .photo-frame { position: relative; border-radius: var(--border-radius-md); overflow: hidden; box-shadow: var(--shadow-sm); background-color: var(--cream); aspect-ratio: 4 / 3; }
 /* FIX: Image covers frame, no distortion or empty space */
-.photo-frame img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-slow); }
+.photo-frame img { width: 100%; height: 100%; object-fit: contain; transition: transform var(--transition-slow); }
 .photo-card:hover .photo-frame img { transform: scale(1.05); }
 .vintage-1 { border: 4px solid var(--primary-color); } .vintage-2 { border: 4px solid var(--secondary-color); } .vintage-3 { border: 4px solid var(--accent-color); } .vintage-4 { border: 4px solid var(--heart-color); } .vintage-5 { border: 4px solid var(--peach-medium); } .vintage-6 { border: 4px solid #FFD180; }
 .photo-caption { font-family: var(--font-family-script); font-size: 1.1em; color: var(--text-primary); margin-top: 12px; line-height: 1.4; }
